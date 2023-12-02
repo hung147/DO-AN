@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Sản phẩm 1",
+      "price": 1000,
+      "description": "Sản phẩm hot",
+      "thumbnail": "/img/con cho.jpeg"
+    }
+  ]
+}
