@@ -303,6 +303,8 @@ nav a {
   grid-area: auto;
   justify-content: center;
   text-align: center;
+  border: none; /* Bỏ viền */
+  outline: none;
 }
 .button-add {
   height: 2.6rem;
@@ -317,6 +319,8 @@ nav a {
   grid-area: auto;
   justify-content: center;
   text-align: center;
+  border: none; /* Bỏ viền */
+  outline: none;
 }
 .product-img {
   width: 620px;
