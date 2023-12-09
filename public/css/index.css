@@ -1,22 +1,22 @@
 * {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .container {
-  width: 1290px;
+  width: 1300px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
-
 h4 {
   text-align: center;
 }
 .sidebar {
   background-color: #d622e0;
-  height: 40px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,8 +24,60 @@ h4 {
   width: 100%; /* Chiều rộng của .sidebar bằng với .container */
 }
 .sidebar-heading {
+  padding-top: 6px;
   font-size: 13px;
 }
+/* animation sidebar */
+.sidebar {
+  overflow: hidden;
+  position: relative;
+}
+.sidebar-heading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: example1 25s linear infinite;
+  -webkit-animation: example1 25s linear infinite;
+  animation: example1 25s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes example1 {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+/*  */
 nav a {
   align-items: center;
   color: #282828;
@@ -40,6 +92,7 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .header-logo img {
   width: 310px;
   height: 50px;
@@ -111,7 +164,7 @@ nav a {
 .footer {
   background-color: #fff;
   color: #333;
-  padding: 20px;
+  padding: 0;
 }
 
 .footer-sections {
@@ -144,4 +197,213 @@ nav a {
 
 .footer-section a:hover {
   text-decoration: underline;
+}
+.footer-icon {
+  display: flex;
+  gap: 20px;
+}
+/*  */
+.popular-cart {
+  color: #212326;
+  /* display: flex; */
+  font-family: -apple-system;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 28.8px;
+  text-align: left;
+  text-decoration: none;
+  /* justify-content: center; */
+  width: 312px;
+  padding: 0;
+}
+.img-popular {
+  height: 312px;
+  width: 100%;
+  object-fit: contain;
+}
+.button-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.button-view {
+  background-color: #d622e0;
+  border-color: #d622e0;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: #a8e8e2 0px 0px 0px 0px;
+  color: #ffffff;
+  display: inline-flex;
+  font-family: -apple-system;
+  font-size: 14px;
+  font-weight: 600;
+  grid-area: auto;
+  justify-content: center;
+  letter-spacing: 2.8px;
+  line-height: 16.8px;
+  padding: 12px 60px 10px;
+  text-align: center;
+  text-transform: uppercases;
+}
+.popular-detail {
+  text-align: center;
+}
+/* product */
+.product {
+  width: 100%;
+  display: flex;
+}
+.product-heading {
+  color: #1a1b18;
+  font-family: -apple-system;
+  font-size: 28px;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 36.4px;
+}
+.product-text {
+  align-items: center;
+  color: #212326;
+  display: flex;
+  font-family: -apple-system;
+  letter-spacing: 0.6px;
+  line-height: 25.6px;
+  margin: 0px 0px 10px;
+}
+.product-price {
+  color: #d72c0d;
+  display: inline;
+  font-size: 28px;
+  grid-area: auto;
+  letter-spacing: 1.3px;
+  line-height: 28px;
+}
+.product-tax {
+  color: #212326;
+  font-size: 12px;
+  grid-area: auto;
+  letter-spacing: 0.7px;
+  line-height: 20.4px;
+}
+.button-number {
+  margin-top: 9px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.button-minus {
+  height: 2.6rem;
+  width: 1.6rem;
+  align-items: center;
+  border-radius: 50%;
+  color: #212326;
+  display: flex;
+  flex-basis: 36px;
+  font-family: Arial;
+  font-size: 18px;
+  grid-area: auto;
+  justify-content: center;
+  text-align: center;
+}
+.button-add {
+  height: 2.6rem;
+  width: 1.6rem;
+  align-items: center;
+  border-radius: 50%;
+  color: #212326;
+  display: flex;
+  flex-basis: 36px;
+  font-family: Arial;
+  font-size: 18px;
+  grid-area: auto;
+  justify-content: center;
+  text-align: center;
+}
+.product-img {
+  width: 620px;
+}
+.product-detail {
+  margin-left: 60px;
+  width: 466px;
+}
+.product-form {
+  display: flex;
+}
+/* choose */
+.choose {
+  width: 100%;
+  display: flex;
+}
+.choose-img {
+  width: 620px;
+  min-width: 620px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.background-map {
+  width: 100%;
+}
+.choose-detail {
+  flex: 1;
+  align-self: center;
+}
+.button-choose {
+  background-color: #d622e0;
+  border-color: #d622e0;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: #a8e8e2 0px 0px 0px 0px;
+  color: #ffffff;
+  display: inline-flex;
+  font-family: -apple-system;
+  font-size: 14px;
+  font-weight: 600;
+  grid-area: auto;
+  justify-content: center;
+  letter-spacing: 2.8px;
+  line-height: 16.8px;
+  padding: 12px 16px 10px;
+  text-align: center;
+  text-transform: uppercases;
+}
+/*  */
+.map {
+  position: relative;
+}
+.map-img {
+  width: 100%;
+  height: 320px;
+}
+.banner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fff; /* Màu nền của banner */
+  padding: 20px;
+  border-radius: 10px; /* Đường viền cong cho banner */
+}
+.button-map {
+  background-color: #8c8d8b;
+  border-color: #8c8d8b;
+}
+.button-add-view {
+  background-color: #d622e0;
+  border-color: #d622e0;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: #a8e8e2 0px 0px 0px 0px;
+  color: #ffffff;
+  display: inline-flex;
+  font-family: -apple-system;
+  font-size: 14px;
+  font-weight: 600;
+  grid-area: auto;
+  justify-content: center;
+  letter-spacing: 2.8px;
+  line-height: 16.8px;
+  padding: 12px 80px 10px;
+  text-align: center;
+  text-transform: uppercases;
 }
