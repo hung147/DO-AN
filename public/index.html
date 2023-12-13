@@ -21,6 +21,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/abstract-vibrant-tree-logo-design-260nw-1931952317.webp"
+    />
     <!-- Option 1: Include in HTML -->
   </head>
   <body>
@@ -87,6 +93,11 @@
 
           <div class="flower-thumbnail">
             <img
+              data-aos="fade-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-mirror="true"
+              data-aos-once="false"
               src="./img/purple-flowers-background.webp"
               alt="Flower Thumbnail"
             />
@@ -154,6 +165,7 @@
                   <i class="bi bi-search"></i>
                 </div>
               </a>
+
               <div class="button-view add-to-cart">
                 <a class="button-link" href="#">ADD TO CART</a>
               </div>
@@ -233,11 +245,22 @@
         <!-- product  -->
         <div class="product">
           <div class="home-product">
-            <img
-              src="https://blom.is/cdn/shop/products/Hatid-i-bae.png?v=1669803004&width=3000"
-              alt=""
-              class="product-img"
-            />
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              <img
+                src="https://blom.is/cdn/shop/products/Hatid-i-bae.png?v=1669803004&width=3000"
+                alt=""
+                class="product-img"
+              />
+            </div>
           </div>
           <div class="product-detail">
             <p class="product-text">This week's bouquet!</p>
@@ -299,11 +322,22 @@
             </div>
           </div>
           <div class="home-choose">
-            <img
-              src="https://blom.is/cdn/shop/files/blandadur-vondur_750x_ad8a580e-0b57-46f0-8295-c590e60740fc.webp?v=1655380925&width=1100"
-              alt=""
-              class="choose-img"
-            />
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              <img
+                src="https://blom.is/cdn/shop/files/blandadur-vondur_750x_ad8a580e-0b57-46f0-8295-c590e60740fc.webp?v=1655380925&width=1100"
+                alt=""
+                class="choose-img"
+              />
+            </div>
           </div>
         </div>
         <!-- map -->
@@ -316,7 +350,14 @@
             />
 
             <!-- Banner Content -->
-            <div class="banner">
+            <div
+              class="banner"
+              data-aos="fade-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               <h2>Reykjavíkurblóm</h2>
               <p>Borgartún 23<br />Reykjavík, Iceland</p>
               <p>Mon - Fri, 10:00 - 18:00<br />Sat - Sun, 11:00 - 17:00</p>
@@ -409,6 +450,10 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/main.js"></script>
     <script src="js/index.js" type="module"></script>
     <script src="js/jquery.min.js"></script>
