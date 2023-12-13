@@ -836,10 +836,12 @@ nav a {
 .add-to-cart {
   position: absolute;
   /* display: none; */
-  transform: translateY(-285%);
+  /* transform: translateY(-285%); */
+  transform: translateY(-210%);
+  /* bottom: 30px; */
   background-color: #d622e0;
   border-color: #d622e0;
-  border-radius: 40px;
+  border-radius: 16px;
   border-style: solid;
   border-width: 3px;
   box-shadow: #a8e8e2 0px 0px 0px 0px;
@@ -860,6 +862,12 @@ nav a {
 }
 .popular-cart:hover .add-to-cart {
   display: inline-block; /* Hiển thị nút khi hover */
+}
+.popular-search {
+  font-size: 20px;
+  top: 20px;
+  right: 40px;
+  position: absolute;
 }
 /*  */
 .account-container {
