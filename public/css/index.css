@@ -135,6 +135,25 @@ nav a {
   color: #222320;
   letter-spacing: 0.6px;
 }
+.bi-minecart-loaded {
+  transform: scale(1.2);
+}
+.bi-globe:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+.bi-search::before:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+.fa-user:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+.bi-minecart-loaded {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
 .header-right {
   display: flex;
   justify-content: space-between;
@@ -145,6 +164,10 @@ nav a {
   display: flex;
   justify-content: space-between;
   gap: 8px; /* Điều chỉnh khoảng cách giữa các phần tử */
+}
+.header-right a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 .fa-earth-americas {
   margin-top: 3px;
@@ -336,9 +359,6 @@ nav a {
   margin-bottom: 4px;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
-}
 .footer-icon {
   display: flex;
   margin-top: 12px;
@@ -394,8 +414,14 @@ nav a {
   width: 100%;
   object-fit: contain;
 }
+
+.img-popular:hover {
+  transform: scale(0.9); /* Phóng to 1.2 lần khi hover */
+  overflow: hidden; /* Đảm bảo hình ảnh không tràn ra khi phóng to */
+}
+
 .popular-title {
-  margin-top: 70px;
+  margin-top: 80px;
   margin-bottom: 30px;
   color: #1a1b18;
   font-size: 28px;
@@ -422,6 +448,7 @@ nav a {
   text-decoration: none;
 }
 .button-view {
+  cursor: pointer;
   background-color: #d622e0;
   border-color: #d622e0;
   border-radius: 40px;
@@ -476,12 +503,16 @@ nav a {
   transform: translateX(220%);
   margin-top: 50px;
   padding: 12px 0px;
+  cursor: pointer;
 }
 /* product */
 .product {
   width: 100%;
   display: flex;
   margin-top: 80px;
+}
+.product-share {
+  cursor: pointer;
 }
 .product-heading {
   color: #1a1b18;
@@ -616,15 +647,21 @@ nav a {
   padding: 12px 90px 12px;
   text-align: center;
   text-transform: uppercases;
+  cursor: pointer;
 }
+
 .product-link {
   margin-top: 24px;
 }
 .product-link span {
   margin-left: 10px;
 }
-.product-view span {
+.product-view a {
+  text-decoration: none;
   margin-left: 10px;
+  color: #000000;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 /* choose */
 .choose {
@@ -668,6 +705,7 @@ nav a {
   text-align: center;
   text-transform: uppercases;
   margin-top: 10px;
+  cursor: pointer;
 }
 .choose-heading {
   color: #1a1b18;
@@ -742,6 +780,7 @@ nav a {
 } */
 
 .button-map {
+  cursor: pointer;
   margin-top: 20px;
   background-color: #8c8d8b;
   border-color: #8c8d8b;
@@ -785,6 +824,7 @@ nav a {
   padding: 12px 80px 10px;
   text-align: center;
   text-transform: uppercases;
+  cursor: pointer;
 }
 /* hieu ung */
 /* them bot gia tri */
@@ -814,6 +854,7 @@ nav a {
   border: none;
   margin: 0 10px;
   cursor: pointer;
+  margin-left: 0;
 }
 .button-minus {
   align-items: center;
@@ -855,6 +896,7 @@ nav a {
   opacity: 1;
 }
 .add-to-cart {
+  cursor: pointer;
   position: absolute;
   /* display: none; */
   /* transform: translateY(-285%); */
@@ -885,18 +927,48 @@ nav a {
 .popular-search i {
   font-size: 24px;
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .col:hover .popular-search i {
   opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  right: -8px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.popular-search {
+/* .popular-search {
   font-size: 20px;
   top: 20px;
   right: 40px;
   position: absolute;
+  display: block;
+  background-color: red;
+  padding: 5px 12px 5px 5px;
+  border-radius: 50%;
+} */
+.popular-search {
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  right: 40px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px 12px 5px 5px;
+  display: block;
+  background-color: #fff;
 }
+
 /*  */
 .account-container {
   width: 540px;
@@ -1002,4 +1074,114 @@ nav a {
 
 .col:hover .add-to-cart {
   transform: translateX(-50%) translateY(0);
+}
+/* hover css */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  text-decoration: none; /* Loại bỏ underline mặc định */
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 0.8px;
+  bottom: 11px;
+  left: 14%;
+  background-color: #bcc2cf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; /* Xuất phát từ góc dưới bên trái khi hover */
+}
+/*  */
+.bi-truck,
+.bi-house,
+.bi-flower1 {
+  font-size: 24px;
+}
+.text-2 {
+  /* text-decoration: underline; */
+  text-decoration: none;
+  cursor: pointer;
+}
+.share-hover {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.share-hover:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 0.8px;
+  bottom: 1px;
+  left: 14%;
+  background-color: #bcc2cf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.share-hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; /* Xuất phát từ góc dưới bên trái khi hover */
+}
+/*  */
+.footer-phone {
+  display: flex;
+}
+.link-phone {
+  margin-left: 8px;
+  text-decoration: none;
+}
+.link-phone,
+.link-email,
+.footer-ul a {
+  /* Đặt chọn thẻ a trong .footer-ul */
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.footer-ul li a {
+  text-decoration: none;
+}
+.link-phone:after,
+.link-email::after,
+.footer-ul a::after {
+  /* Đặt chọn thẻ a trong .footer-ul */
+  content: "";
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 0.8px;
+  bottom: 1px;
+  left: 14%;
+  background-color: #bcc2cf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  text-decoration: none;
+}
+
+.link-phone:hover:after,
+.link-email:hover::after,
+.footer-ul a:hover::after {
+  /* Đặt chọn thẻ a trong .footer-ul */
+  text-decoration: none;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.footer-ul li a {
+  text-decoration: none; /* Loại bỏ underline */
+}
+.footer-last {
+  cursor: pointer;
+}
+.product-view {
+  cursor: pointer;
 }
