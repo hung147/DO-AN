@@ -1142,7 +1142,10 @@ nav a {
 }
 .link-phone,
 .link-email,
-.footer-ul a {
+.footer-ul a,
+.account-create,
+.account-home,
+.account-forget {
   /* Đặt chọn thẻ a trong .footer-ul */
   display: inline-block;
   position: relative;
@@ -1153,7 +1156,10 @@ nav a {
 }
 .link-phone:after,
 .link-email::after,
-.footer-ul a::after {
+.footer-ul a::after,
+.account-create::after,
+.account-home::after,
+.account-forget::after {
   /* Đặt chọn thẻ a trong .footer-ul */
   content: "";
   position: absolute;
@@ -1170,7 +1176,10 @@ nav a {
 
 .link-phone:hover:after,
 .link-email:hover::after,
-.footer-ul a:hover::after {
+.footer-ul a:hover::after,
+.account-create:hover::after,
+.account-home:hover::after,
+.account-forget:hover::after {
   /* Đặt chọn thẻ a trong .footer-ul */
   text-decoration: none;
   transform: scaleX(1);
