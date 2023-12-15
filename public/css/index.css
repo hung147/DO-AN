@@ -1303,3 +1303,79 @@ nav {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/* flowershop review */
+.review-shop-container {
+  width: 1130px;
+  margin: 0 auto;
+}
+.review-heading {
+  color: #1a1b18;
+  font-size: 40px;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 52px;
+  margin: 0px 0px 40px;
+}
+.heading-cut,
+.heading-potted,
+.heading-gift,
+.heading-card,
+.heading-packaging {
+  color: #1a1b18;
+  font-size: 20px;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.para-cut,
+.para-potted,
+.para-gift,
+.para-card,
+.para-packaging {
+  color: #212326;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 28.8px;
+  font-weight: 300;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.card-para-last {
+  margin-bottom: 46px;
+  color: #212326;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 28.8px;
+  font-weight: 300;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+.review-detail {
+  margin-bottom: 60px;
+}
+.review-shop-container {
+  margin-top: 60px;
+}
+/*  */
+.top-above {
+  display: flex;
+}
+.right-above {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.above-price {
+  font-size: 30px;
+}
+.share-hover::after {
+  content: "";
+  position: absolute;
+  width: 96%;
+  transform: scaleX(0);
+  height: 0.8px;
+  bottom: 2px;
+  left: 3%;
+  background-color: #bcc2cf;
+  transform-origin: bottom right;
+}
