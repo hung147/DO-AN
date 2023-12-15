@@ -1379,3 +1379,60 @@ nav {
   background-color: #bcc2cf;
   transform-origin: bottom right;
 }
+/* shop */
+.top-shop {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.shop-h1 {
+  color: #1a1b18;
+  font-size: 40px;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 52px;
+  font-weight: 400;
+}
+.shop-p {
+  color: #212326;
+  display: inline;
+  font-size: 18px;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 27px;
+  text-align: left;
+  font-weight: 300;
+}
+.shop-des {
+  width: 880px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.shop-read-more {
+  color: #1a1b18;
+  display: inline;
+  font-size: 18px;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 27px;
+  text-align: left;
+  font-weight: 400;
+}
+/*  */
+
+.bot-header {
+  display: flex;
+  align-items: center; /* Căn giữa chiều dọc */
+}
+
+.bot-count {
+  margin-left: auto; /* Đẩy phần tử này sang phải cùng */
+  text-align: center;
+}
+.collection-container {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
