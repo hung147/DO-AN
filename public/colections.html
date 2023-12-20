@@ -27,12 +27,14 @@
       type="image/x-icon"
       href="./img/abstract-vibrant-tree-logo-design-260nw-1931952317.webp"
     />
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
     <!-- Option 1: Include in HTML -->
   </head>
   <body>
@@ -42,7 +44,7 @@
         Sat-Sun: 11:00-17:00
       </div>
     </div>
-    <div class="container">
+    <div class="container-1">
       <header>
         <div class="header-top">
           <div class="header-left">
@@ -124,9 +126,27 @@
                   >FILTER <i class="bi bi-plus"></i
                 ></a>
               </div>
-              <div class="right-button button-view">
-                Sort By
-                <i class="bi bi-arrow-down-short"></i>
+              <!-- <div class="right-button button-view">
+                <span class="sort-by">SORT BY</span>
+                <i class="bi bi-chevron-down icon-sort-by"></i>
+              </div> -->
+              <div class="dropdown">
+                <button
+                  class="button-view right-button"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SORT BY <i class="bi bi-chevron-down icon-sort-by"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Flower 1</a></li>
+                  <li><a class="dropdown-item" href="#">Flower 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Flower 3</a>
+                  </li>
+                </ul>
               </div>
               <div class="bot-count">
                 <span class="number-product">82</span>
@@ -318,8 +338,55 @@
               </div>
             </div>
           </div>
+          <!--  -->
+
+          <nav class="page-product" aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item disabled">
+                <a
+                  class="page-link"
+                  href="http://127.0.0.1:5501/public/colections.html#"
+                  tabindex="-1"
+                  >1</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="http://127.0.0.1:5501/public/colections.html#"
+                  >2</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="http://127.0.0.1:5501/public/colections.html#"
+                  >3</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="http://127.0.0.1:5501/public/colections.html#"
+                  >...</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="http://127.0.0.1:5501/public/colections.html#"
+                  >10</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
         <!--  -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+        ></script>
       </body>
       <hr />
       <footer class="footer">

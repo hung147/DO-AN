@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+.container-1 {
   width: 1300px;
   height: auto;
   margin-left: auto;
@@ -894,6 +894,7 @@ nav a {
 /* Cấu hình hiệu ứng cho biểu tượng search */
 .col:hover .popular-search i {
   opacity: 1;
+  color: #000000;
 }
 .add-to-cart {
   cursor: pointer;
@@ -998,7 +999,7 @@ nav a {
   outline: none;
   border-bottom: 1px solid #42474c;
   border: none;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .button-account {
   display: flex;
@@ -1106,9 +1107,12 @@ nav a {
   font-size: 24px;
 }
 .text-2 {
-  /* text-decoration: underline; */
   text-decoration: none;
   cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+.text-3 {
+  border: none;
 }
 .share-hover {
   display: inline-block;
@@ -1422,6 +1426,7 @@ nav {
 .bot-header {
   display: flex;
   align-items: center; /* Căn giữa chiều dọc */
+  margin-top: 60px;
 }
 
 .bot-count {
@@ -1441,4 +1446,182 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 20px; /* Khoảng cách giữa các cột */
+  margin-top: 50px;
+}
+.bot-button {
+  cursor: pointer;
+  background-color: #d622e0;
+  border-color: #d622e0;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: #a8e8e2 0px 0px 0px 0px;
+  color: #ffffff;
+  display: inline-flex;
+  font-family: system-ui, "-apple-system", "Segoe UI", "Roboto",
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  grid-area: auto;
+  justify-content: center;
+  letter-spacing: 2.8px;
+  line-height: 16.8px;
+  padding: 12px 20px 10px;
+  text-align: center;
+  text-transform: uppercases;
+  margin-right: 20px;
+}
+.button-filter {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sort-by {
+  transform: translateX(-30px);
+}
+.icon-sort-by {
+  transform: translateX(40px);
+}
+.right-button {
+  /* margin-left: 20px; */
+  background-color: #fff;
+  color: #000000;
+  border-color: #000000;
+}
+.page-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.bot-count {
+  color: #212326;
+  font-family: -apple-system;
+  font-size: 14px;
+  grid-area: auto;
+  letter-spacing: 0.6px;
+  line-height: 25.2px;
+  font-weight: 300;
+}
+/* checkout */
+.custom-margin {
+  display: flex;
+}
+
+.left-column {
+  background-color: #e0e0e0;
+}
+
+.right-column {
+  background-color: #f0f0f0;
+}
+.col-lg-7,
+.col-lg-5 {
+  padding: 0;
+}
+.header-pay {
+  display: flex;
+  margin: 0 200px;
+  justify-content: space-between;
+}
+.body-pay-create {
+  display: flex;
+  /* margin: 0 200px; */
+  justify-content: space-between;
+}
+.pay-input-email {
+  /* margin: 0 200px; */
+  width: 100%;
+}
+.pay-checkbox-email {
+  /* margin: 0 200px; */
+}
+.body-pay-delivery {
+  display: flex;
+  align-items: center;
+  /* margin: 0 200px; */
+  border: #000000 solid 1px;
+  padding: 10px;
+}
+.text-pay-delivery,
+.text-pay-pickup {
+  margin-bottom: 0;
+}
+
+.body-pay-pickup {
+  display: flex;
+  align-items: center;
+  /* margin: 0 200px; */
+  border: #000000 solid 1px;
+  padding: 10px;
+  justify-content: space-between;
+}
+.body-total-pickup {
+  display: flex;
+}
+.container-there {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: #000000 1px solid;
+}
+.body-total-delivery {
+  display: flex;
+}
+.body-pay-delivery {
+  display: flex;
+  justify-content: space-between;
+}
+.body-pay-salt,
+.body-pay-aur,
+.body-pay-bank,
+.body-pay-paypal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: #000000 1px solid;
+}
+.body-total-salt,
+.body-total-aur,
+.body-total-bank,
+.body-total-paypal {
+  display: flex;
+}
+.text-pay-salt,
+.text-pay-aur,
+.text-pay-bank,
+.text-pay-paypal {
+  margin-bottom: 0;
+}
+.svg-img-paynow {
+  width: 163px;
+  height: 81px;
+}
+.body-pay-paynow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  padding: 40px;
+}
+.country-re {
+  position: absolute;
+  font-size: 12px;
+  margin-left: 14px;
+}
+.pay-infor-heading {
+  position: relative;
+}
+.form-control-total {
+  display: flex;
+}
+.infor-name {
+  display: flex;
+}
+.button-pay-link {
+  border: none;
+  background-color: #ffffff;
+}
+.link-pay-add {
+  text-decoration: none;
 }
